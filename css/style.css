@@ -30,10 +30,7 @@ h3 {
 p {
   padding: 16px;
 }
-.container {
-  padding-left: 150px;
-  padding-right: 150px;
-}
+
 .btn {
   width: 70%;
   height: 40px; 
@@ -261,7 +258,29 @@ footer {
 #resume img {
   width: 100%;
 }
-
+/*  CONTACT */
+/*  CONTACT */
+/*  CONTACT */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  resize: vertical;
+}
+label {
+  margin-left: 20px;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
 @media all and (min-width: 880px){
     
