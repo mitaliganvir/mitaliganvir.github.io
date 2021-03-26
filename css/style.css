@@ -1,0 +1,318 @@
+/*BEGIN STARTER CSS - DO NOT CHANGE*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #fff;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 30px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+  color: #3e27d2;
+}
+
+h2{
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+}
+h3 {
+  color: #3e27d2;
+  text-align: center;
+}
+p {
+  padding: 16px;
+}
+.container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.btn {
+  width: 70%;
+  height: 40px; 
+  border-radius: 6px;
+  background: #3e27d2;
+  color: white;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+header{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header p{
+  color: black;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+.logo {
+  max-width: 80px;
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3px;
+  
+}
+footer a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 3px;
+  
+}
+
+nav a:hover, a:focus {
+  text-decoration: underline;
+  background-color: #3e27d2;
+  color: #fff;
+}
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.skip a{
+  background: white;
+  color: #3e27d2;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top: -50px;
+
+}
+
+.skip a:focus {
+  top: 10px;
+  text-decoration: underline;
+  background-color: #3e27d2;
+  color: #fff;
+}
+
+*:focus {
+  border-top: 2px dashed;
+  border-bottom: 2px dashed;
+} 
+.active {
+  border-bottom: 3px dashed #3e27d2;
+  display: inline-block;
+  color: ;
+}
+/* ABOUT */
+/* ABOUT */
+/* HOME */
+.homepage {
+  max-width: 100%;
+}
+/* .about {
+  padding: 20px;
+  text-align: justify;
+}
+.about1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-rows: 200px 200px;;
+}
+.about-01 {
+  grid-column: 2/  3;
+
+} 
+.about-01img {
+  grid-column: 3/ 4;
+  align-self: center;
+}
+.about-02 {
+  grid-column: 2/  3;
+  grid-row: 2/ span 1;
+
+} .about-02img {
+  grid-row: 2/ span 1;
+  grid-column: 3/ 4;
+  align-self: center;
+} */
+/*  What I do */
+/*  What I do */
+/*  What I do */
+.what > ul{
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.whatido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.what {
+  margin: 12px;
+  background: rgb(202, 202, 202);
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+  flex-basis: 600px;
+  
+}
+.whatido header {
+  background: rgb(202, 202, 202);
+  padding: 20px 0;
+  border-radius: 7px 7px 0 0;
+}
+.whatido button{
+  width: 70%;
+  height: 40px; 
+  border-radius: 6px;
+  background: #3e27d2;
+  color: white;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-top: 20px;
+  
+}
+/*  GALLERY */ 
+/*  GALLERY */ 
+/*  GALLERY */ 
+.img1 {
+  width: 100%;
+  padding: 10px 10px;
+}
+/*  WORK */ 
+/*  WORK */
+/*  WORK */
+.work{
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 20px;
+}
+.work img {
+  width: 100%;
+}
+.project1, .project2, .project3, .project4{
+  grid-column: 1 / 6;
+
+}
+
+.project1-image, .project2-image, .project3-image, .project4-image{
+  grid-column: 1 / -1;
+  
+  overflow: hidden;
+
+}
+
+.project1, .project1-image{
+  grid-row: 1 / span 1;
+}
+
+
+.project2, .project2-image{
+  grid-row: 2 / span 1;
+}
+
+
+.project3, .project3-image{
+  grid-row: 3 / span 1;
+}
+
+
+.project4, .project4-image{
+  grid-row: 4 / span 1;
+}
+
+.work p {
+  text-align: center;
+}
+.text{
+  background-color: rgba(26, 26, 26, 0.9);
+  color: #fff;
+  padding: 30px;
+  /*Your code here:*/
+  align-self: center;
+  
+}
+
+footer {
+  background-color:#d5d5d5;
+  color: rgb(24, 24, 24);
+  padding-top: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+#resume img {
+  width: 100%;
+}
+
+
+@media all and (min-width: 880px){
+    
+  img{
+     width:100%;
+  }
+    
+  nav{
+    padding: 30px 0px;
+    text-align: right;
+  }
+
+  
+  .work{
+    grid-columns: 50px auto 500px auto 50px;
+    grid-rows: 400px 425px 425px 400px;
+  }
+
+  /*Req 12*/
+  .about, .client, .method-image, .contact-image{
+    /*Your code here:*/
+    grid-column: 3 / span 2;
+  }
+
+  
+  .about-image, .client-image, .method, .contacts{
+   
+    grid-column: 2 / span 2;
+  }
+
+  
+
+
+
+/*You do not need to modify any code below this line.
+It is included for accessibility to turn off animations
+and movement for people who have modified their 
+preferences to reduce motion.*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
