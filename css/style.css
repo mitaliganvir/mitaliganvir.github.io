@@ -189,7 +189,78 @@ footer ul {
 #statement p, h3 {
   background-color: #fff;
 }
+/* =============================================================
+                 Art and Design (REsponsive Tabs)
+================================================================*/
+#services-02 {
+  background: #fff;
+}
 
+#services-02 h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-bottom: 0px;
+}
+
+#services-tabs ul {
+  margin-bottom: 40px;
+}
+
+#services-tabs ul li {
+  padding: 30px 40px;
+}
+
+#services-tabs ul li a {
+  color: #212226;
+  text-transform: uppercase;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Tab active state */
+#services .row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  
+}
+#services-tabs ul li.r-tabs-state-active a {
+  color: #3e27d2;
+  font-weight: 600;
+  border: 3px dashed #3e27d2;
+  padding-bottom: 5px;
+  -webkit-transition: border-color 300ms linear;
+  transition: border-color 300ms linear;
+}
+
+#services-tabs img {
+  margin: 0px auto;
+  width: 100%;
+}
+
+.service-tab .tab-bg {
+  background: #fff;
+  padding: 10px 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.service-tab h2 {
+  font-size: 50px;
+  margin-bottom: 5px;
+  font-weight: 100;
+}
+
+.service-tab h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.service-tab p {
+  line-height: 24px;
+  margin-bottom: 30px;
+}
 /* =============================================================
                  Testimonials
 ================================================================*/
