@@ -186,7 +186,9 @@ footer ul {
   justify-content: center;
 
 }
-
+#statement p, h3 {
+  background-color: #fff;
+}
 
 /* =============================================================
                  Testimonials
