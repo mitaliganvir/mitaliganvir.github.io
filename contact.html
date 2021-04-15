@@ -83,9 +83,9 @@
                                 </div>
                           </div>
                           <ul class="social-list text-center">
-                              <li><a href="https://www.facebook.com/mitali.ganvir/"><i class="fa fa-facebook">fb</i></a></li>
-                              <li><a href="https://www.linkedin.com/in/mitali-ganvir-42480066/"><i class="fa fa-linkedin">Ln</i></a></li>
-                              <li><a href="mailto:mitalig@umich.edu"><i class="fa fa-google-plus">E</i></a></li>
+                              <li><a href="https://www.facebook.com/mitali.ganvir/"><i  aria-label="facebook"></i>fb</a></li>
+                              <li><a href="https://www.linkedin.com/in/mitali-ganvir-42480066/"><i  aria-label="linkedIn"></i>li</a></li>
+                              <li><a href="mailto:mitalig@umich.edu"><i  aria-label="google-plus"></i>G</a></li>
                           </ul>
                       </div>
 
@@ -95,7 +95,7 @@
                       <!-- Contact Right -->
                       <div id="contact-right">
 
-                          <form>
+                          <form action="https://formspree.io/f/myylzgbl" method="POST">
                               <h4>Send Message</h4>
                               <p>Help us know you better!</p>
 
@@ -103,13 +103,13 @@
                                   <div class="col-md-6">
                                       <div class="form-group">
                                         <label for="name">Name</label>
-                                        <input id="name" type="text" class="field" placeholder="Your Name" >
+                                        <input id="name" type="text" name="name" class="field" placeholder="Your Name" >
                                       </div>
                                   </div>
                                   <div class="col-md-6">
                                       <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input id="email" type="text" class="field" placeholder="Your Email">
+                                        <input id="email" type="text" name="email" class="field" placeholder="Your Email">
                                       </div>
                                   </div>
                               </div>
@@ -117,22 +117,22 @@
                                   <div class="col-md-6">
                                       <div class="form-group">
                                         <label for="phone">Phone</label>
-                                        <input id="phone" type="text" class="field" placeholder="Phone">
+                                        <input id="phone" type="text" name="phone" class="field" placeholder="Phone">
                                       </div>
                                   </div>
                                   <div class="col-md-6">
                                       <div class="form-group">
                                         <label for="subject">Subject</label>
-                                        <input id="subject" type="text" class="field" placeholder="Subject">
+                                        <input id="subject" type="text" name="subject" class="field" placeholder="Subject">
                                       </div>
                                   </div>
                               </div>
                               <div class="form-group">
                                 <label for="message">Message</label>
-                                  <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                  <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
                               </div>
                               <div id="submit-btn">
-                                  <a class="btn btn-general btn-crimson" href="#" title="submit" role="button">Submit</a>
+                                  <input type="submit" class="btn btn-general btn-crimson" title="submit" role="button"></a>
                               </div>
                           </form>
                       </div>
@@ -157,6 +157,12 @@
     
     <p>University of Michigan School of Information <br/>
       &copy; Mitali Ganvir</p>
+
+      <!-- back to top -->
+      <a href="#main" id="back-to-top" class="btn btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="Home" role="button">
+        <i class="fa fa-angle-up"></i>
+      </a>
+      
   </footer>
 
   <!-- jQuery -->

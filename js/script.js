@@ -1,40 +1,11 @@
-/* ================================
-            Preloader
-=================================*/
-$(window).on('load', function () {
-    $('#status').fadeOut();
-    $('#preloader').delay(350).fadeOut('slow');
-});
 
-/* ================================
-            Team
-=================================*/
-$(function () {
-    $("#team-members").owlCarousel({
-        items: 2,
-        autoplay: true,
-        smartSpeed: 500,
-        loop: true,
-        autoplayHoverPause: true,
-        nav: true,
-        dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        responsive: {
-            0: {
-                items:1  
-            },
-            480: {
-                items:2
-            }
-        }
-    });
-});
 
 /* ================================
             REsponsive Tabs
 =================================*/
 $(function () {
     $("#services-tabs").responsiveTabs({
+        startCollapsed: 'accordion'
 
     });
 });
@@ -63,33 +34,6 @@ $(window).on('load', function () {
     });
 });
 
-/* ===========================================
-            Magnifier
-==============================================*/
-$(function () {
-    $("#portfolio-wrapper").magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-});
-/* ================================
-            Testimonial slider
-=================================*/
-$(function () {
-    $("#testimonial-slider").owlCarousel({
-        items: 1,
-        autoplay: false,
-        smartSpeed: 500,
-        loop: true,
-        autoplayHoverPause: true,
-        nav: true,
-        dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
-    });
-});
 
 
 /*Smooth scrolling*/
@@ -105,3 +49,23 @@ $(function () {
         }, 1000, "easeInOutExpo");
     });
 });
+
+
+/* ================================
+            Read more
+=================================*/
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }

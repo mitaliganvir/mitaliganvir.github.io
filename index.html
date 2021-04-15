@@ -54,13 +54,17 @@
       </nav>
     </header>
   <main id="main">
-    <h1>Hi! I am Mitali </h1>
+    <div class="typewriter">
+      <h1>Hi! I am Mitali </h1>
+    </div>
+    <div id="underline">
+    </div>
 
     <div id="aboutme" class="row">
-      <div id="aboutme_img" class="col-md-6 text-center">
+      <div id="aboutme_img" class="col-md-6 col-sm-6 text-center">
         <img class="homepage" src="images/aboutme.jpg" alt="profile picture">
       </div>
-      <div id="aboutme_text" class="col-md-6">
+      <div id="aboutme_text" class="col-md-6 col-sm-6">
         <h2>About me</h2>
         <p>I am currently pursuing MSI at School of Information at University of Michigan. I've had amazing opportunities to leverage my skills and keep learning through this experience. I led and contributed to design projects from strategic concepts (early discovery) to post-launch takeaways as well and currently working on agile product teams with two growing companies in the US. 
 
@@ -88,7 +92,7 @@
               <!-- About2 Bottom -->
                   <div id="what">
                     <div class="col-md-4 col-sm-4">
-                      <div class="about-item text-center">
+                      <div class="about-item text-center" tabindex="0">
                           <i class="fa fa-rocket"></i>
                           <h3>UX Research</h3>
                           <hr>
@@ -100,7 +104,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-4">
-                      <div class="about-item text-center">
+                      <div class="about-item text-center"tabindex="0">
                           <i class="fa fa-eye"></i>
                           <h3>Architecture</h3>
                           <hr>
@@ -112,7 +116,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-4">
-                      <div class="about-item text-center">
+                      <div class="about-item text-center"tabindex="0">
                           <i class="fa fa-pencil"></i>
                           <h3>Art and Design</h3>
                           <hr>
@@ -128,10 +132,13 @@
       </div>
   </div>
   
-  <div class="container"></div>
-        <div class="about-02">
-            <h2>Why UX Design</h2>
-            <p>I began my formal career in architecture, embedding myself in the practice of systems design. By working for 2 years with different clients, I developed a strong sense for systems design thinking, storytelling, and empathy, and a passion for design strategy to be able to serve according to their requirements. I loved early discovery and analyzing messy insights so I could strategize ideas that develop into architectural drawings/wireframes and integrate into viable solutions. </p>
+  <div id="whyux" class="container"></div>
+        <div class="about-02 text-center">
+          <h2>Why UX Design</h2>
+          <p>I began my formal career in architecture, embedding myself in the practice of systems design. By working for 2 years with different clients, I developed a strong sense for systems design thinking, storytelling, and empathy, and a passion for design strategy to be able to serve according to their requirements. I loved early discovery and analyzing messy insights so I could strategize ideas that develop into architectural drawings/wireframes and integrate into viable solutions.<span id="dots">...</span><span id="more">Having co-founded a start-up designing and creating personalized gifts to developing websites as an independent website developer, and creating blueprints for building independent houses, I have worked on diverse disciplines that have given me first hand insights into real world problems and the ability to find solutions to these problems by leveraging the principles of design and coding. In the process I have learnt various technical and non-technical aspects required to solve these problems, such as learning HTML, CSS, Java Script, jQuery, and project management skills. Moreover, I have completed my undergraduate degree in Architecture which enable me to quickly convert idea generation, screening, concept development, product development, and finally commercialization. I can also create low-fidelity/high fidelity wireframes and working prototypes. I am extremely motivated, who also likes to hone new skill-sets in order to find solutions to real-world problems.</span></p>
+
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+            
         </div>
     </div>
     <!-- Statement -->
@@ -153,15 +160,15 @@
     <h2>My Gallery</h2>
     <section class="gallery">
       
-      <img class="img1" src="images/gallery/img1.jpg" alt="IIT Chandigarh Logo"/>
-      <img class="img1" src="images/gallery/img5.jpg" alt="Invitation design"/>
-      <img class="img1" src="images/gallery/img2.jpg" alt="Niks Cupcake Logo"/>
-      <img class="img1" src="images/gallery/img3.jpg" alt="Special Operations Unit Logo"/>
-      <img class="img1" src="images/gallery/img9.jpg" alt="Unicorn Bubbles Logo"/>
-      <img class="img1" src="images/gallery/img6.jpg" alt="TIllustration portrait"/>
-      <img class="img1" src="images/gallery/img4.jpg" alt="Zaika Logo"/>
-      <img class="img1" src="images/gallery/img7.jpg" alt="Bubble tea Logo"/>
-      <img class="img1" src="images/gallery/img8.jpg" alt="Cat illustration"/>
+      <img class="img1" tabindex="0" src="images/gallery/img1.jpg" alt="IIT Chandigarh Logo"/>
+      <img class="img1" tabindex="0" src="images/gallery/img5.jpg" alt="Invitation design"/>
+      <img class="img1" tabindex="0" src="images/gallery/img2.jpg" alt="Niks Cupcake Logo"/>
+      <img class="img1" tabindex="0" src="images/gallery/img3.jpg" alt="Special Operations Unit Logo"/>
+      <img class="img1" tabindex="0" src="images/gallery/img9.jpg" alt="Unicorn Bubbles Logo"/>
+      <img class="img1" tabindex="0" src="images/gallery/img6.jpg" alt="TIllustration portrait"/>
+      <img class="img1" tabindex="0" src="images/gallery/img4.jpg" alt="Zaika Logo"/>
+      <img class="img1" tabindex="0" src="images/gallery/img7.jpg" alt="Bubble tea Logo"/>
+      <img class="img1" tabindex="0" src="images/gallery/img8.jpg" alt="Cat illustration"/>
       
     </section>
 
@@ -178,7 +185,7 @@
         &copy; Mitali Ganvir</p>
 
         <!-- back to top -->
-        <a href="#main" id="back-to-top" class="btn btn-sm btn-crimson btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="Home" role="button">
+        <a href="#main" id="back-to-top" class="btn btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="Home" role="button">
           <i class="fa fa-angle-up"></i>
         </a>
 

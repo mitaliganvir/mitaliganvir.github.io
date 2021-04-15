@@ -4,36 +4,38 @@
 }
 html{
     scroll-behavior: smooth;
-    font-family: ;
+    font-family: Helvetica, sans-serif;
 }
 body{
   background-color: rgb(238, 232, 252);
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 h1{
-  font-size: 40px;
+  font-size: 28px;
   line-height: 1;
-  padding: 40px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   color: #3e27d2;
 }
 
 h2{
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 15px;
 }
 h3 {
-  
+  margin-top: 16px;
   text-align: center;
   
 }
 p {
-  padding: 16px;
+  font-size: 14px;
+  padding: 10px;
 }
 
 .btn {
@@ -70,6 +72,7 @@ nav a{
   font-weight: bold;
   text-decoration: none;
   padding: 3px;
+  font-size: 14px;
   
 }
 footer a{
@@ -77,9 +80,12 @@ footer a{
   font-weight: bold;
   text-decoration: none;
   padding: 3px;
-  
+  font-size: 14px;
 }
-
+footer p{
+  
+  font-size: 12px;
+}
 nav a:hover, a:focus {
   border-bottom: 3px dashed #3e27d2;
   color: #3e27d2;
@@ -112,19 +118,20 @@ nav a:hover, a:focus {
 }
 
 *:focus {
-  border-top: 2px dashed;
-  border-bottom: 2px dashed;
+  border: 2px dashed;
 } 
 .active {
   border: 3px dashed #3e27d2;
   display: inline-block;
   color: #3e27d2;
+  text-transform: uppercase;
 }
 /* ABOUT */
 /* ABOUT */
 #aboutme img {
   width: 60%;
   border-radius: 30rem;
+  margin-top: 40px;
 }
 /* FOOTER NAV */
 footer .nav_links{
@@ -136,11 +143,56 @@ footer .nav_links{
 footer ul {
   list-style: none;
 }
+#more {
+  display: none;
+}
 
+/* ================================
+         Typewriter
+=================================*/
+.typewriter {
+  max-width: 380px;
+  margin: auto;
+}
+#underline {
+  width: 100px;
+  height: 6px;
+  background-color: orange;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: normal;
+}
+@keyframes example {
+  0%   {background-color:orange; left:0px; top:0px;}
+  100%  {background-color:orange; left:1024px; top:0px;}
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 /* ================================
          About 02
 =================================*/
+
 #about-02 h2 {
   padding: 20px ;
 }
@@ -165,7 +217,35 @@ footer ul {
 .about-item:hover .fa {
   color: #fff;
 }
+.about-item:hover i {
+  transform: translateY(-20px);
+}
 
+/* Focus state*/
+.about-item:focus {
+  background-color: #3e27d2;
+}
+
+.about-item:focus h3,
+.about-item:focus p,
+.about-item:focus .fa {
+  color: #fff;
+}
+.about-item:focus i {
+  transform: translateY(-20px);
+}
+.about-item i{
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+button{
+  background-color: #fff;
+  padding: 10px 10px;
+}
+.about-02 {
+  margin-bottom: 20px;
+}
 /* ================================
          Statement
 =================================*/
@@ -180,13 +260,15 @@ footer ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-#statement p, h3 {
+#statement h3 {
+  background-color: #fff;
+}
+#statement p {
   background-color: #fff;
 }
 /* =============================================================
@@ -198,7 +280,7 @@ footer ul {
 
 #services-02 h2 {
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-bottom: 0px;
 }
 
@@ -207,7 +289,8 @@ footer ul {
 }
 
 #services-tabs ul li {
-  padding: 30px 40px;
+  padding: 25px 35px;
+  
 }
 
 #services-tabs ul li a {
@@ -215,6 +298,7 @@ footer ul {
   text-transform: uppercase;
   padding: 0;
   text-decoration: none;
+  
 }
 
 /* Tab active state */
@@ -230,8 +314,7 @@ footer ul {
   font-weight: 600;
   border: 3px dashed #3e27d2;
   padding-bottom: 5px;
-  -webkit-transition: border-color 300ms linear;
-  transition: border-color 300ms linear;
+  
 }
 
 #services-tabs img {
@@ -247,18 +330,18 @@ footer ul {
 }
 
 .service-tab h2 {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 5px;
   font-weight: 100;
 }
 
 .service-tab h3 {
-  font-size: 30px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
 .service-tab p {
-  line-height: 24px;
+  line-height: 16px;
   margin-bottom: 30px;
 }
 /* =============================================================
@@ -333,15 +416,19 @@ footer ul {
 /*  GALLERY */ 
 /*  GALLERY */ 
 .gallery{
-  min-height: 400px;
+  min-height: 300px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 .gallery img{
-
-  width: 400px;
   padding: 5px;
+}
+.img1:hover {
+  border: 3px solid #3e27d2;
+}
+.img1:focus {
+  border: 3px solid #3e27d2;
 }
 /*  WORK */
 /* =============================================================
@@ -409,17 +496,15 @@ footer {
   text-align: center;
   margin-top: 50px;
 }
-#resume img {
-  width: 100%;
-}
-#ux .btn {
-  
-}
+
 
 /* =============================================================
                  Contact
 ================================================================*/
 /*Contact left side*/
+#contact-left {
+  display: none;
+}
 #contact-left p {
   margin: 25px 0 20px 0;
 }
@@ -432,10 +517,7 @@ ul.office-details {
 }
 
 ul.office-details li {
-  font-family: "Open Sans", sans-serif;
   margin-top: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -500,7 +582,7 @@ ul.social-list li {
 }
 
 ul.social-list li a {
-  border: 1px solid #fff;
+  border: 1px solid #3e27d2;
   width: 35px;
   height: 35px;
   display: inline-block;
@@ -546,7 +628,6 @@ ul.social-list li:nth-child(3) a:focus {
   padding-bottom: 50px;
 }
 .flip-card-inner img {
-  
   width: 100%;
   max-height: 100%;
 }
@@ -554,14 +635,11 @@ ul.social-list li:nth-child(3) a:focus {
   padding-top: 20%;
 }
 .flip-card {
-  background-color: transparent;
   width: 100%;
   height: 300px;
-  perspective: 1000px;
 }
 
 .flip-card-inner {
-  position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -573,6 +651,10 @@ ul.social-list li:nth-child(3) a:focus {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -601,7 +683,7 @@ ul.social-list li:nth-child(3) a:focus {
 }
 
 #portfolio .vertical-heading h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 100;
   margin-bottom: 50px;
 }
@@ -629,15 +711,12 @@ ul.social-list li:nth-child(3) a:focus {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-
   outline: 0;
 }
 
 #isotope-filters button span {
   display: block;
   padding-bottom: 5px;
-  -webkit-transition: border-color 300ms ease-in-out;
-  transition: border-color 300ms ease-in-out;
 }
 
 #isotope-filters button.active span {
@@ -649,16 +728,8 @@ ul.social-list li:nth-child(3) a:focus {
 .portfolio-item img {
   width: 100%;
   height: auto;
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
-.portfolio-item:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
 
 /* Overlay effect */
 .portfolio-item-overlay {
@@ -668,11 +739,9 @@ ul.social-list li:nth-child(3) a:focus {
   left: 0;
   right: 0;
   background: rgba(14, 14, 17, 0.9);
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
+
   opacity: 0;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+
 }
 
 /* Item Details effect */
@@ -684,17 +753,8 @@ ul.social-list li:nth-child(3) a:focus {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
-.portfolio-item-details h3 {
+.portfolio-item-details h2 {
   color: #fff;
-  
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  -webkit-transform: translateY(-20%);
-  transform: translateY(-20%);
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
 }
 
 .portfolio-item-details span {
@@ -711,30 +771,39 @@ ul.social-list li:nth-child(3) a:focus {
   color: #fff;
   margin: 0;
   padding: 0;
-  -webkit-transform: translateY(20%);
-  transform: translateY(20%);
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
 }
 
-/* Show overlay on ouse hover */
-.portfolio-item:hover .portfolio-item-details h3 {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
+/* Show overlay on mouse hover */
 
-.portfolio-item:hover .portfolio-item-details p {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
 
 .portfolio-item:hover .portfolio-item-overlay {
   opacity: 1;
+}
+
+/* Show overlay on focus */
+
+.portfolio-item:focus .portfolio-item-overlay {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.experience h2 {
+text-align: left;
+margin-left: 16px;
+margin-right: 16px;
 
 }
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+.experience h3 {
+  text-align: left;
+  margin-left: 16px;
+  color: #3e27d2;
+  }
+.experience p{
+  margin-right: 16px;
+}
+/*Skills*/
 .skills .progress {
   height: 60px;
   display: block;
@@ -748,7 +817,6 @@ ul.social-list li:nth-child(3) a:focus {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
   
 }
 
@@ -759,20 +827,62 @@ ul.social-list li:nth-child(3) a:focus {
 }
 
 .skills .progress-bar-wrap {
-  
   height: 10px;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: .9s;
   background-color: #3e27d2;
 }
+/*======================================================
+ TABLET */
 /* MEDIA */
+/* QUERIES =============================================*/
 
-@media all and (min-width: 600px){
+@media all and (min-width: 768px){
+
+  h1{
+    font-size: 38px;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  
+  h2{
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 40px;
+  }
+  h3 {
+    margin-top: 20px;
+    text-align: center;
     
+  }
+  p {
+    padding: 16px;
+  }
+  nav a{
+    font-size: 20px;
+  }
+  footer a{
+    font-size: 20px;
+  }
+  footer p{
+    font-size: 14px;
+  }
+  .gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery img{
+
+    width: 300px;
+  }
   .work img{
      max-width: 600px;
   }
@@ -782,12 +892,12 @@ ul.social-list li:nth-child(3) a:focus {
     text-align: right;
   }
   #aboutme_text {
-    padding-top: 50px;
+    padding-top: 10px;
   }
-  .work{
+  /*.work{
     grid-columns: 50px auto 500px auto 50px;
     grid-rows: 400px 425px 425px 400px;
-  }
+  }*/
 
   .project1, .project2, .project3, .project4{
     
@@ -799,21 +909,38 @@ ul.social-list li:nth-child(3) a:focus {
    
     grid-column: 2 / span 2;
   }
+  .service-tab h2 {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .service-tab h3 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+  .service-tab p {
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+  .service-tab img {
+    min-height: 240px;
+  }
   
 
   /*Navigation*/
   /*Navigation*/
   header{ 
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 
   }
   
   .nav_links{
     display: flex;  
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   
   nav {
@@ -843,16 +970,147 @@ ul.social-list li:nth-child(3) a:focus {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   #architecture h2 {
     padding-top: 10%;
   }
+  /* Experience*/
+  /* Experience*/
+  /* Experience*/
+  /* Experience*/
+.experience{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#contact-left {
+  display: inline;
+}
+/*======================================================
+ LAPTOP */
+/* MEDIA */
+/* QUERIES =============================================*/
+@media all and (min-width: 1024px){
+  /*Navigation*/
+  /*Navigation*/
+  header{ 
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 
-/*You do not need to modify any code below this line.
-It is included for accessibility to turn off animations
-and movement for people who have modified their 
-preferences to reduce motion.*/
+  }
+  
+  .nav_links{
+    display: flex;  
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  nav {
+    width: 100%;
+  }
+
+  h1{
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  
+  h2{
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 40px;
+  }
+  h3 {
+    margin-top: 22px;
+    text-align: center;
+    
+  }
+  p {
+    padding: 20px;
+  }
+  nav a{
+    font-size: 22px;
+  }
+  footer a{
+    font-size: 22px;
+  }
+  footer p{
+    font-size: 14px;
+  }
+  .gallery img{
+
+    width: 300px;
+  }
+  .work img{
+     max-width: 600px;
+  }
+
+  #aboutme_text {
+    padding-top: 50px;
+  }
+  #aboutme img {
+    margin-top: 60px;
+  }
+
+/*======================================================
+ LAPTOP */
+/* MEDIA */
+/* QUERIES =============================================*/
+@media all and (min-width: 1024px){
+
+  body{
+    background-color: rgb(238, 232, 252);
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  h1{
+    font-size: 38px;
+  }
+  
+  h2{
+    font-size: 24px;
+    padding-top: 40px;
+  }
+  h3 {
+    font-size: 20px;
+    
+  }
+  p {
+    font-size: 16px;
+  }
+  nav a{
+    font-size: 20px;
+  }
+  footer a{
+    font-size: 20px;
+  }
+  footer p{
+    font-size: 14px;
+  }
+  .gallery img{
+
+    width: 300px;
+  }
+  .work img{
+     max-width: 600px;
+  }
+    
+  nav{
+    padding: 30px 0px;
+    text-align: right;
+  }
+  #aboutme_text {
+    padding-top: 50px;
+  }
+  #aboutme img {
+    margin-top: 100px;
+  }
+/*================================
+preferences to reduce motion.
+===================================*/
 
 @media screen and (prefers-reduced-motion: reduce){
   html{
@@ -860,17 +1118,44 @@ preferences to reduce motion.*/
   }
 
   .skip a{
-    -webkit-transition: none; /* sets to default setting */
-    transition: none;        /* sets to default setting */
+    -webkit-transition: none; 
+    transition: none;        
    }
 
   /*Turn off parallax*/
   header{
     background-attachment: initial;
   }
+  .typewriter h1 {
+    animation: none;
+  }
+  /*parallax off*/
 
+  #statement {
+    background-attachment: initial;
+  }
+  ul.social-list li a {
+    -webkit-transition: none;
+    transition: none;        
+  }
 
-
-
+  .about-item:hover {
+    background-color: #3e27d2;
+  }
+  
+  .flip-card-inner {
+    transition: none;
+  }
+  .about-item:hover i {
+    transform: none;
+  }
+  .about-item i{
+    -webkit-transition: none;
+    transition: none;
+  }
+  #underline {
+    animation: none;
+    width: 100%;
+  }
 
 }
